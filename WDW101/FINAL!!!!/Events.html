@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Savanna's Coffee Shop</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content=" Coffee shop Events">
+    <meta name="Author:" value="Jacob Scroggins">
+    <meta name="destription" content="Coffee shop Events">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="savanna's style sheet.css">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+
+
+        body{
+            margin: 0%;
+            background-color:cadetblue ;
+        }
+
+
+        nav ul li {  
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            display: inline-block;
+            padding-right: 10px;
+            
+        }
+
+        header{
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .background_img{
+            font-size: 300%;
+            margin: 0%;
+            color: white;
+            text-align: center;
+            background-size: 100%;
+            padding: 5%;
+            background-repeat: no-repeat;
+            background-image: url(img/pexels-fardad-postwala-5137290.jpg);
+            background-position: 50% 50%;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        figure img{
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3%;
+            width: 80%;
+        }
+
+        figure{
+            background-color: black;
+            width: 20%;
+
+        }
+
+        figcaption{
+            
+            text-align: center;
+            color: white;
+        }
+        
+        @media screen and (max-width: 320px) {
+            .background_img{
+            background-size: 500%;
+            font-size: 200%;
+            padding-top: 0%;
+            }
+
+            nav ul li{
+                padding-top: 5%;
+                display: block;
+            }
+
+            .icon{
+                width: 0%;
+            }
+
+            figure{
+                padding: 5%;
+                margin: 0%;
+                width: 100%;
+           }
+
+           .row{
+               width: 100%;
+           }
+
+        }
+        @media screen and (max-width: 425px){
+            .background_img{
+            background-size: 300% ;}
+            
+            nav ul li{
+            padding-top: 5%;
+            display: block;
+            }
+
+           .icon{
+               width: 0%;
+           }
+
+           figure{
+            padding: 5%;
+            margin: 0%;
+            width: 100%;
+           }
+
+           .row{
+               width: 100%;
+           }
+        }
+    </style>
+ </head>
+ <body>
+     <header>
+         <img src="../../WDW101/FINAL!!!!/img/iconmonstr-coffee-11-240.png" alt="coffee icon" width="5%" class="icon" >
+        <h1>Savanna's Coffee House</h1>
+        <nav>
+            <ul>
+                <li><a href="Savanna's Coffee House.html">Home</a></li>
+                <li><a href="menu.html">Menu </a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="contact us .html">Contact</a></li>
+                <li><a href="about us.html">About</a></li>
+            </ul>
+        </nav>    
+     </header>
+
+     <main>
+         <div class="background_img">
+        <p><em>Savanna’s Coffee House</em></p>
+           <p>Upcoming Events</p>
+        </div>
+
+        <div class="row">
+            <figure>
+                <img src="img/pexels-cottonbro-4973813.jpg" alt="chess" height="%">
+                <figcaption>
+                    <p>Chess Nite</p>
+                    <p>Every Monday evening</p>
+                    <p> 5:30 - 9:00 pm.</p>
+                    
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/pexels-luca-dal-molin-4096098.jpg" alt=" music fest photo" width="">
+                <figcaption>
+                    <p>Sunday Songwriters Songfest</p>
+                    <p>February 21 @ 4:00 pm - 7:00 pm</p>
+                    <p>Event header #tribe-events-header</p>
+                    <p>Kate Macleod – Award-winning Americana Songwriter</p>
+                    <P>Joel Bernstein – Up & Coming Folk/Pop Songwriter</P>
+                </figcaption>
+
+            </figure>
+
+            <figure>
+                <img src="img/rock-staar-tHe3ilBzgHA-unsplash.jpg" alt="songwriter" width="" >
+                <figcaption>
+                    <p>Mark McKay, singer & songwriter</p>
+                    <p>Friday February 27th</p>
+                    <P> 8:00 – 10:00 pm</P>  
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/pexels-veveto-9832255.jpg" alt="coffee roasting" width="">
+                <figcaption>
+                    <p>The Backyard Girls: pop acoustic guita</p>
+                    <p>Friday February 27th</p>
+                    <p>8:00 – 10:00 pm</p>
+                </figcaption>
+            </figure>
+            
+        </div>
+     </main>
+
+     <footer>
+        <a href="https://www.facebook.com/"><img src="img/iconmonstr-facebook-6-240.png" width="10%" alt="facebook icon"></a>
+        <a href="https://www.instagram.com"><img src="img/iconmonstr-instagram-11-240.png" width="10%" alt="instagram icon"></a>
+        <a href="https://www.twitter.com"><img src="img/iconmonstr-twitter-4-240 (1).png" width="10%" alt="twitter icon"></a>
+     </footer>
+
+ </body>   
+</html>

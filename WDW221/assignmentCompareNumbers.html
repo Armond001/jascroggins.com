@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript</title>
+
+<script>
+  function compareNumbers(){
+    // these two variables catch the inputs of the form and assigns them 
+  let inValue1 = document.getElementById("value1").value;
+	
+	let inValue2 = document.getElementById("value2").value;
+
+  // these to variables take the input values and parseFloats them to alloww numbers besides intergers
+	let parseValue1 = parseFloat(inValue1);
+
+	let parseValue2 = parseFloat(inValue2);
+
+  // these two if statements check if the inputs are valid numbers and will display "value is not a number " if arent numbers 
+  if (isNaN(inValue1)){
+		document.getElementById("results").innerHTML = "value 1 is not a number ";
+		return;
+	}
+
+	if (isNaN(inValue2)){
+		document.getElementById("results").innerHTML = "value 2 is not a number ";
+		return;
+	}
+
+  // this is the main comparator and will display the value of the greater one or "they are equal" if their the same
+  if (parseValue1==parseValue2){
+		document.getElementById("results").innerHTML = "they are equal";
+	}
+	else{
+		if (parseValue1 > parseValue2)
+			{
+			document.getElementById("results").innerHTML = inValue1;	
+		}
+		else															
+			{								
+			document.getElementById("results").innerHTML = inValue2;	
+		}
+	}
+
+
+}
+
+
+// when called this funtion will clear the form and clear the innerHTML of span element on the results
+function resetNumbers(){
+  document.getElementById("form1").reset();
+  document.getElementById("results").innerHTML=""
+}
+</script>
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+<h3>Comparisons and IF Statements - Compare Numbers Assignment </h3>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment. </p>
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+<p>Using Blackboard submit this  Assignment.</p>
+<hr />
+<form id="form1" name="form1" method="post" action="">
+  <p>Value 1: 
+    <input type="text" name="value1" id="value1" />
+  </p>
+  <p>Value 2: 
+    <input type="text" name="value2" id="value2" />
+  </p>
+  <p>Result: <span id="results"> </span> </p>
+  <p>
+    <input type="button" value="Compare Numbers" onclick="compareNumbers()" />
+  </p>
+  <p>
+    <input type="button" name="Reset" id="button" value="Reset" onclick="resetNumbers()" />
+  </p>
+</form>
+
+
+
+<p>Instructions:</p>
+<ol>
+  <li>Create a function called compareNumbers( ).</li>
+  <li>The function will compare two numbers entered in the form above. </li>
+  <li>The function should display the largest number or &quot;Equal&quot; if both values are the same.</li>
+  <li>The results will be displayed in a span element using the .innerHTML property.</li>
+  <li>Provide a reset function that will properly clear the form between attempts.</li>
+</ol>
+</body>
+</html>
+

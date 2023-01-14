@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewprt" content="width=device-width, initial-scale=1.0">
+    <title>WDV221</title>
+    <style>
+    </style>
+    <script src="../WDW221/bankaccount.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">// link to jquery</script>
+    <script>
+       /*
+       inputs 
+        card number 
+        amount to widthdrawl
+        amount to deposit 
+        deposit-info
+        deposit-location 
+        -scan/upload-check photo
+            
+
+
+       ouput
+        account balance
+        -transaction history widthdraws
+        -transaction history deposit
+       
+
+       proccesses 
+        sign on 
+            input account number 
+            input pin
+            verify account- hard code an example info
+            create a new bank account object
+            load your name and balance 
+        deposit 
+        widthdrawl 
+            amount to widthdraw
+            process balance 
+            which account to widthdraw from 
+        show widthdraw transactions 
+        show deposit transactions 
+        -transfer/bill pay
+       */
+
+       let accountobject= new BankAccount ();
+
+      function processSignOn(){
+       let acctNumber= document.querySelector("#accountNumber").value
+       let acctPin= document.querySelector("#accountPin").value
+
+       const testAcctNumber= 12345;
+       const testAcctPin=12345;
+
+       if(acctNumber == testAcctNumber && acctPin == testAcctPin)
+       {
+       // 
+      accountobject= new BankAccount (300,123345,"jacob");
+       console.log(accountobject);
+       }
+       else{
+        alert("invalid account or pin");
+       }
+    }
+       
+   
+    
+    function displayBalance(){
+           document.getElementById("results").innerHTML= " " +accountobject.getBalance();
+        }
+
+
+    function widthdrawCash(){
+       accountobject.widthdrawFunds(23.00);
+    }
+
+       
+    </script>
+</head>
+
+<body >
+
+
+    <h1>WDV-221 javaScript</h1>
+    <h2>project examples</h2>
+    <main>
+        <div id="atm screen">
+            <p>welcome to atm</p>
+            <form method="post" action="#">
+            <p>
+                <label for="accountNumber">account Number</label>
+                <input type="text " name="accountNumber" id="accountNumber">
+            </p>
+            <p>
+                <label for="accountPin">PIN</label>
+                <input type="text" name="accountPin" id="accountPin">
+            </p>
+            <p>
+            <button type="button" name="signOn" value="signOn" onclick="processSignOn()">submit</button>
+            <button type="reset">reset</button>
+            </p>
+
+        </form>
+        <div>
+            <button onclick="widthdrawCash()">widthdraw funds</button>
+            <button>deposit funds</button>
+            <button onclick="displayBalance()">check balance</button>
+            <button>show depsosit transactions</button>
+
+        </div>
+        <P><span id="results"></span></P>
+        </div>
+    </main>
+
+</body>
+
+</html>

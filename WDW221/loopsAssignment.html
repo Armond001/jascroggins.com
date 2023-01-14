@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript - Loops</title>
+</head>
+
+<body>
+<h1>WDV221 Intro Javascript</h1>
+<h2>Project-5 Loops Assignment</h2>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment. </p>
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+<p>Using Blackboard submit this  Assignment.</p>
+<hr />
+<h3>Instructions: </h3>
+<p>Please complete the following exercises using Javascript loops as indicated.  Please place your code on this page. Use runtime scripts unless told otherwise. </p>
+<p>1. Create a WHILE loop that will print out the  numbers 0 to 4 each on a seperate line.</p>
+<script>
+
+  // this will set the loop control variable 
+  let whileCount = 0;
+
+  // this while loop will count to 4
+  while(whileCount < 5){
+
+    // this script will write each numbber in it on paragraph so they are on seperate lines 
+    document.write("<p>" +  whileCount + "</p>");
+
+    // this will up date the count of the loop
+    whileCount++;
+
+  }
+</script>
+<p>2. Create a FOR loop that will print out the  numbers 4 to 0 each on a seperate line.</p>
+<script>
+  // this for loop will count down from 4 to 0 
+  for(x=4;x>=0 ;x--){
+
+    // this script will write each numbber in it on paragraph so they are on seperate lines 
+    document.write("<p>" +  x + "</p>");
+  }
+</script>
+<p>3. Create a loop that will print 1 to 5 each in its own paragraph element.</p>
+<script>
+  // this loop will start at 1 and count to 5 
+  for(y=1;y<6;y++){
+  // this script will take the count and write it out in a paragraph element 
+    document.write("<p>" +  y + "</p>");
+  }
+</script>
+<p>4. Create a loop that will print out the following numbers (5,10,15,20,25...) until one is greater than 40.</p>
+<script>
+  // this will set the control variable to 5 
+  let count40= 5;
+
+  // this loop will continoue till it reaches 40
+  while(count40<=40){
+
+    // this script will write ou the count with a comma inbetween each count 
+    document.write(count40 + ",");
+
+    // this will update the count of the loop at an interval of 5 
+    count40 += 5;
+  }
+</script>
+<p>5. Create a loop that will print out  6 of the following messages (Option 1, Option 2, Option 3, etc. ) as options within the drop down menu below.</p>
+<p>
+  <label>Select an Option! 
+    <select name="select" id="select">
+      <script>
+
+        //this loop will start at 1 and count to 6
+        for(j=1;j<=6;j++){
+          // this will create an new option in the form with each count and write out option + the count 
+          document.write("<option>" + "option " + j + "</option>");
+        }
+      </script>
+    </select>
+  </label>
+</p>
+<p>&nbsp;</p>
+</body>
+</html>

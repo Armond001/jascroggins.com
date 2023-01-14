@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+
+        function displayName(){
+            document.write(firstName);// global var//
+        }
+
+        let firstName ="jill";
+
+        function displayName1(){
+            document.write("jacob")   // funtction write (input string){...} // hard code//
+        }
+
+        function displayName2(inputName){
+            // behind the scences - let inputName //
+            document.write(inputName);
+        }
+    </script>
+</head>
+<body>
+    <h1>WDV221 JavaScript</h1>
+    <h2> Untit-4 functions paramaters and returnes </h2>
+        <p>hello <script>displayName();</script></p>
+        <p>hello <script>displayName1();</script></p>
+        <p>hello <script>displayName2("john");// pass data into funtion//</script></p>
+        <p>hello <script>displayName2("mark");// pass data into funtion//</script></p>
+
+        <P>  hello
+        <script>
+            firstName = prompt("enter first Name");
+            displayName2(firstName);// promts for input and displays it //
+
+        </Script>
+        </P>
+</body>
+</html>

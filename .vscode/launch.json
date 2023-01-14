@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open koala_home.html",
+            "file": "c:\\Users\\jacobs pc\\Desktop\\WDV101 HTML\\jascroggins.com\\WDW101\\Koala_Site_2020\\koala_home.html"
+        }
+    ]
+}

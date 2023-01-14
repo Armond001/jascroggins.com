@@ -1,0 +1,109 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+        
+
+
+
+        body{
+            margin: 0%;
+            background-color:cadetblue ;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+        }
+
+        nav ul li {  
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+            display: inline-block;
+            padding-right: 10px;
+            
+        }
+
+        header{
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .background_img{
+            font-size: 300%;
+            margin: 0%;
+            color: white;
+            text-align: center;
+            background-size: 100%;
+            padding: 5%;
+            background-repeat: no-repeat;
+            background-image: url(../../WDW101/FINAL!!!!/img/pexels-marta-dzedyshko-2775827.jpg);
+            background-position: 50% 50%;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        nav ul li a, nav ul li a:visited{
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: crimson;
+        }
+
+       
+        .row{
+            
+            display: flex;
+            flex-direction: row;
+            
+
+        }
+
+      
+      
+        @media screen and (max-width: 320px) {
+            .background_img{
+            background-size: 500%;
+            font-size: 200%;
+            padding-top: 0%;
+            }
+
+            nav ul li{
+                padding-top: 5%;
+                display: block;
+            }
+
+            .icon{
+                width: 0%;
+            }
+
+            footer img{ 
+                width: 20%;
+            }
+
+        }
+        @media screen and (max-width: 425px){
+            .background_img{
+            background-size: 300% ;}
+            
+            nav ul li{
+            padding-top: 5%;
+            display: block;
+            }
+
+           .icon{
+               width: 0%;
+           }
+
+           
+           footer img{ 
+            width: 20%;
+           }
+        }

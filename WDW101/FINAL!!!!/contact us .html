@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Savanna's Coffee Shop</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content=" Coffee shop Events">
+    <meta name="Author:" value="Jacob Scroggins">
+    <meta name="destription" content="Coffee shop Events">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="savanna's style sheet.css">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+
+
+        .container{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: sandybrown;
+            
+            border-left: 70px  solid peru;
+            border-right: 70px  solid peru;
+            text-align: center;
+            font-size: 100%;
+            
+            
+        }
+        
+        
+        form{
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center ;
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+           
+            
+        }
+
+        .flex-form{   
+        display: flex;
+        margin-top: 1%;
+        width: 100%;
+        }
+
+        .flex-form input, select, textarea {
+  			 width: 50%;             
+  		}
+
+        .flex-form label{
+            margin-right: 3%;
+            width: 25%;
+        }
+
+        .flex-form input, select, textarea {
+  			width: 50%;
+        }
+
+        textarea{
+            height: 100px;
+        }
+        @media screen and (max-width: 320px) {
+          
+            .flex-form{
+                display: block;
+            }
+
+            .flex-form label{
+                
+            align-self: center;
+            width: 100%;
+        }
+
+        .flex-form input, select, textarea {
+  			width: 100%;
+        }
+        .container{
+            padding: 0%;
+                margin: 0%;
+                width: 100%;
+                border: none;
+            }
+
+        }
+        @media screen and (max-width: 425px){
+
+            .flex-form{
+                display: block;
+            }
+
+            .container{
+                padding: 0%;
+                margin: 0%;
+                width: 100%;
+                border: none;
+                text-align: center;
+            }
+
+            
+            .flex-form label{
+                align-self: center;
+            width: 100%;
+        }
+
+        .flex-form input, select, textarea {
+  			width: 100%;
+        }
+        form{
+            margin-left:auto ;
+            margin: auto;
+            justify-content: center;
+        }
+        }
+
+
+        @media screen and (max-width: 768px){
+
+            .flex-form{
+                display: block;
+            }
+
+            .flex-form label{
+                align-self: center;
+            width: 100%;
+        }
+
+        .flex-form input, select, textarea {
+  			width: 100%;
+        }
+
+        form{
+            margin-left:auto ;
+            margin: auto;
+            justify-content: center;
+        }
+
+
+        }
+    </style>
+ </head>
+ <body>
+     <header>
+         <img src="img/iconmonstr-coffee-11-240.png" alt="coffee icon" width="5%" class="icon" >
+        <h1>Savanna's Coffee House</h1>
+        <nav>
+            <ul>
+                <li><a href="Savanna's Coffee House.html">Home</a></li>
+                <li><a href="menu.html">Menu </a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="contact us .html">Contact</a></li>
+                <li><a href="about us.html">About</a></li>
+            </ul>
+        </nav>    
+     </header>
+
+     <main>
+         <div class="background_img">
+        <p><em>Contact Us</em></p>
+           
+        </div>
+
+        <div class="container ">
+
+            <P style="margin-top:0%">Questions about our coffees?  Fill out our contact form or give us a call. We will be in touch!</P>
+
+            <form method="post" action="coffee form handle.php">
+
+                <div class="flex-form">	
+                    <label for="firstName">First Name: </label>
+                    <input type="text" name="firstName" id="firstName" placeholder="first name">
+                </div>
+
+                <div class="flex-form">	
+                    <label for="lastname">last Name: </label>
+                    <input type="text" name="lastname" id="=lastname" placeholder="Last name">
+                </div>
+
+                <div class="flex-form">	
+                    <label for="emailAddress">Email Address: </label>
+                    <input type="text" name="emailAddress" id="emailAddress" placeholder="name@anywhere.com">
+                </div>
+
+                <div class="flex-form">
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
+                </div >
+
+                <div class="flex-form " >
+
+                    <label for="message"> Enter message </label>
+                    <textarea type="message" id="message" name="message " placeholder="enter message"></textarea>
+
+                </div>
+
+                <div class="flex-buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </form>
+
+        </div>
+
+
+     </main>
+
+     <footer>
+        <a href="https://www.facebook.com/"><img src="img/iconmonstr-facebook-6-240.png" width="10%" alt="facebook icon"></a>
+        <a href="https://www.instagram.com"><img src="img/iconmonstr-instagram-11-240.png" width="10%" alt="instagram icon"></a>
+        <a href="https://www.twitter.com"><img src="img/iconmonstr-twitter-4-240 (1).png" width="10%" alt="twitter icon"></a>
+     </footer>
+
+ </body>   
+</html>

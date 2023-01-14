@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewprt" content="width=device-width, initial-scale=1.0">
+    <title>WDV221</title>
+    <style>
+
+    </style>
+    <script src="bankaccount.js"></script>
+    <script>
+        
+        let newBank = new BankAccount(300,123,"Jacob Scroggins");
+
+        newBank.depositFunds(43.25);
+        console.log(newBank.getBalance());
+
+        newBank.widthdrawFunds(23.00);
+        console.log(newBank.getBalance());
+
+        console.log(newBank.AccountInfo());
+
+
+        function displayBalance(){
+           document.getElementById("displayBalance").innerHTML= " " + newBank.getBalance();
+        }
+
+        function displayBankInfo(){
+           document.getElementById("displayBankInfo").innerHTML= " " + newBank.AccountInfo();
+        }
+
+        function displayAccountName(){
+           document.getElementById("displayAccountName").innerHTML= " " + newBank.getAccountName();
+        }
+
+        function displayAccountNumber(){
+            document.getElementById("displayAccountNumber").innerHTML= " " + newBank.getAccountNumber();
+        }
+    </script>
+</head>
+
+<body >
+
+
+    <h1>WDV-221 javaScript</h1>
+    <h2>bank account</h2>
+    
+    <p>bank Account balance<span id="displayBalance"></span></p>
+    <button onclick="displayBalance()">display balance</button>
+
+    <p>bank Account info<span id="displayBankInfo"></span></p>
+    <button onclick="displayBankInfo()">display Account Info</button>
+    
+    <p>bank Account Name<span id="displayAccountName"></span></p>
+    <button onclick="displayAccountName()">display Account Name</button>
+
+    <p>bank Account Number<span id="displayAccountNumber"></span></p>
+    <button onclick="displayAccountNumber()">display Account Number</button>
+    
+
+</body>
+
+</html>

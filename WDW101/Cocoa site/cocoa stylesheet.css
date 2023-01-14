@@ -1,0 +1,30 @@
+
+
+p::first-letter{font-size: xx-large;}
+body{background-color: rgb(136, 71, 41);margin-left: auto
+    ;margin-right: auto;width: 950px;}
+
+main{background-color: rgb(194, 158, 143);}
+
+nav ul li:hover {background-color: blue;}
+
+nav ul{list-style: none;padding: 0px; margin: 0px; }
+
+nav ul li{display: inline-block ;border-right:thin solid black;text-align: center; width: 100px;padding-top: 15px; padding-bottom:15px; color:goldenrod;background-color: black;}
+
+h1{background-color: #4c160b ;color:  blanchedalmond;}
+
+header{text-align: center;}
+
+ p{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+
+.center {display: block;margin-left: auto;margin-right: auto;width: 30%;}
+  
+  .float-right{float: right;}
+
+.float-left{float: left;}
+
+img{padding: 5px;margin: 20px; border:black solid 2px;}
+
+h3{ padding: 5px;border-top: dotted cornsilk 1px; width: 175px; }

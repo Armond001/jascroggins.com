@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewprt" content="width=device-width, initial-scale=1.0">
+    
+<style>
+    
+</style>
+<script>
+
+    function htmlEvent(){
+        console.log("this a HTML event hanler ")
+    }
+
+
+   
+    function mouseOutBig(image){
+        image.style.width="64px";
+        image.style.height="64px";
+     }
+
+    function mouseOutSmall(image){
+        image.style.width="32px";
+        image.style.height="32px";
+    }
+ 
+
+    function onChangeEvent(selectObject){
+        let value =selectObject.value;
+        console.log(value)
+
+    }
+
+
+        function mouseOver() {
+         document.getElementById("mouseOver1").style.color = "red";
+        }
+
+        function mouseOut() {
+        document.getElementById("mouseOver1").style.color = "black";
+        }
+
+        function  pageSetup(){
+            document.getElementById("mouseOver1").onmouseover = function() {mouseOver()};
+        document.getElementById("mouseOver1").onmouseout = function() {mouseOut()};
+
+        }
+
+
+</script>
+</head>
+
+<body onload="pageSetup()">
+
+   
+    <h1>WDV221 Intro to JavaScript</h1>
+    <H2>Event Handlers </H2>
+    <P><button id="button1" onclick=htmlEvent()>Display Html EventHandler</button></p>
+    <P id="mouseOver1"> this will change the colors when moused over</P>
+   
+    <img onmouseover="mouseOutBig(this)" onmouseout="mouseOutSmall(this)" src="images/pexels-esther-höfling-12671120.jpg "alt="" width="32px">
+
+    <select id="selector" onchange="onChangeEvent(this)">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+</body>
+</html>

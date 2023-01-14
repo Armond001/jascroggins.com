@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewprt" content="width=device-width, initial-scale=1.0">
+    <title>WDV221</title>
+    <style>
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">// link to jquery</script>
+    <script>
+    let studentObject = {
+        studentName: "Jacob Scroggins",
+        studentID: 12345,
+        school: "DMACC West"
+    }
+
+    let jsonStudentObject = JSON.stringify(studentObject);
+
+    console.log(jsonStudentObject);
+
+    
+
+    let newJsonObject = JSON.parse(jsonStudentObject);
+
+    console.log(newJsonObject);
+     
+    
+
+    </script>
+</head>
+
+<body >
+
+
+    <h1>WDV-221 javaScript</h1>
+    <h2>JSON </h2>
+    <p>display of original obeject<script>document.write(studentObject);</script></p>
+    <p>display of JSON object <script>document.write(jsonStudentObject);</script></p>
+    <p>display of converted JSON object<script>document.write(newJsonObject);</script></p>
+    
+</body>
+
+</html>

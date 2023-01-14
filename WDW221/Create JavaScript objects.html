@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewprt" content="width=device-width, initial-scale=1.0">
+    <title>WDV221</title>
+    <style>
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">// link to jquery</script>
+    <script>
+    // part 1
+    let bookTitles = ["Beginning Javascript", "Logic with ES6", "Javascript Ojbects Made Easy"];
+
+    let bookPrices = [19.99, 29.49, 999.99];
+
+    let bookAuthor = ["Smith", "Johson-Parker", "Westin" ];
+
+    class masterBook{
+         bookTitle="";
+         bookPrice=0;
+         bookAuthor="";
+
+         constructor(bookTitle,bookPrice,bookAuthor){
+            this.bookTitle=bookTitle;
+            this.bookPrice=bookPrice ;
+            this.bookAuthor=bookAuthor;
+         }
+
+        studentDiscountPrice( ){
+        let discount = this.bookPrice - (this.bookPrice * .2);
+            return discount.toLocaleString("en-US", {style:"currency", currency:"USD"}); 
+      }
+        
+    }
+    
+
+    let book1= new masterBook(bookTitles[0],bookPrices[0],bookAuthor[0]);
+    console.log(book1);
+
+    let book2= new masterBook(bookTitles[1],bookPrices[1],bookAuthor[1]);
+    console.log(book2);
+
+    let book3= new masterBook(bookTitles[2],bookPrices[2],bookAuthor[2]);
+    console.log(book3);
+
+    let javascriptBooks = [book1,book2,book3];
+    console.log(javascriptBooks);
+    //part 2
+
+    let bookA = {
+        bookTitle :"Beginning Javascript",
+        bookPrice:19.99,
+        bookAuthor:"Smith",
+
+        studentDiscountPrice( ){
+            let discount = this.bookPrice - (this.bookPrice * .2);
+            return discount.toLocaleString("en-US", {style:"currency", currency:"USD"}); 
+       }
+    }
+    console.log(bookA);
+   
+    let bookB = {
+          
+        bookTitle :"Logic with ES6",
+        bookPrice:29.49,
+        bookAuthor:"Johson-Parker",
+
+        studentDiscountPrice( ){
+            let discount = this.bookPrice - (this.bookPrice * .2);
+            return discount.toLocaleString("en-US", {style:"currency", currency:"USD"}); 
+        }
+    }
+    console.log(bookB);
+
+    let bookC = {
+          
+        bookTitle :"Javascript Ojbects Made Easy",
+        bookPrice:999.99,
+        bookAuthor:"Westin",
+
+        studentDiscountPrice( ){
+            let discount = this.bookPrice - (this.bookPrice * .2);
+            return discount.toLocaleString("en-US", {style:"currency", currency:"USD"}); 
+        }
+    }
+    console.log(bookC);
+
+    let newBooks = [bookA,bookB,bookC];
+
+    </script>
+</head>
+
+<body >
+
+
+    <h1>WDV-221 javaScript</h1>
+    <h2>Assignment: 13-1: Create JavaScript objects</h2>
+    <p>part 1</p>
+    <script>
+        for(x=0;x<javascriptBooks.length;x++){
+            document.write("<p>"+ JSON.stringify(javascriptBooks[x]) +"student discount price" + javascriptBooks[x].studentDiscountPrice() + "<p>")
+        }
+    </script>
+
+    <p>part 2</p>
+    <script>
+
+        for(j=0;j<newBooks.length;j++){
+            document.write("<p>"+ JSON.stringify(newBooks[j]) +"student discount price" + newBooks[j].studentDiscountPrice()  + "<p>")
+        }
+    
+    </script>
+</body>
+
+</html>

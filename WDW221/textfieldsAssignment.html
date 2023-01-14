@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript - Operators and Textfields Assignment</title>
+
+<style>
+
+body {background-color:#C99;
+}
+
+.highlightTitle	{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:14px;
+	text-decoration:underline;
+	color:#096;
+}
+
+
+</style>
+
+
+<script>
+	var count = 0;	
+function display1(){
+  var inValue1 = document.getElementById("value1").value;
+
+  let parseValue1 = parseFloat(inValue1);
+
+  if(isNaN(inValue1)){
+    alert("value 1 is not a number");
+  return;
+  }
+  else{
+    document.getElementById("value1Results").value=(parseValue1);
+  }
+
+}
+
+function display2(){
+  var inValue2 = document.getElementById("value2").value;
+
+  let parseValue2 = parseFloat(inValue2);
+
+  if(isNaN(inValue2)){
+    alert("value 2 is not a number");
+  return;
+  }
+  else{
+    document.getElementById("value2Results").value=(parseValue2);
+  }
+
+}
+
+
+  function multiply(){
+
+    var inValue1 = document.getElementById("value1").value;
+
+    let parseValue1 = parseFloat(inValue1);
+
+    var inValue2 = document.getElementById("value2").value;
+
+    let parseValue2 = parseFloat(inValue2);
+
+    if(isNaN(inValue1)){
+      alert("value 1 is not a number");
+      return;
+    }
+
+    if(isNaN(inValue2)){
+        alert("value 2 is not a number");
+        return;
+    }
+    else{
+      document.getElementById("multiplyResults").value=(parseValue1 * parseValue2);
+     }
+    }
+
+function add(){
+  var inValue1 = document.getElementById("value1").value;
+
+    let parseValue1 = parseFloat(inValue1);
+
+    var inValue2 = document.getElementById("value2").value;
+
+    let parseValue2 = parseFloat(inValue2);
+
+    if(isNaN(inValue1)){
+      alert("value 1 is not a number");
+      return;
+    }
+
+    if(isNaN(inValue2)){
+        alert("value 2 is not a number");
+        return;
+    }
+    else{
+      document.getElementById("addResults").value=(parseValue1 + parseValue2);
+    }
+}  
+
+function counter(){
+  document.getElementById("count").value=(count++);
+}
+  
+
+
+
+  
+
+  
+</script>
+
+
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+<h3>Project 3 - Operators and Textfields - Assignment</h3>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment. </p>
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+<p>Using Blackboard submit this  Assignment.</p>
+<hr />
+<h3>Instructions</h3>
+<p>Use the form fields for the input values. For each of the following exercises create a function what will be activated by the button.  </p>
+<form name="form1" method="post" action="" >
+  <p>Enter a number for value1:
+    <input type="text" id="value1" name="value1" />
+  </p>
+  <p>Enter a number for value 2:
+    <input type="text" id="value2" name="value2" />
+  </p>
+  <p>1.
+    <input type="button" value="Display value1" onclick="display1()"/>
+    Display the value you entered for value1:
+  <input type="text" value="" id="value1Results" >
+  </p>
+  <p>2.
+    <input type="button" value="Display value2" onclick="display2()" />
+    Dislplay the value you entered for value2:
+  <input type="text"value="" id="value2Results"/>
+  </p>
+  <p>3.
+    <input type="button" value="Multiply" onclick="multiply()" />
+    Display the value of value1 * value2:
+  <input type="text" id="multiplyResults" value=""/>
+  </p>
+  <p>4.
+    <input type="button" value="Add" onclick="add()" />
+    Display the results of value1 + value2 in the following textfield.
+  <input type="text" id="addResults" value=""/>
+  </p>
+  <p>5.
+    <input type="button" value="Increment count" onclick="counter()"/>
+    Use the increment operator to add 1 to count and display the new value of count.
+  <input type="text" id="count"/>
+  </p>
+  <p>
+    <input type="reset" name="Reset" id="button" value="Reset">
+  </p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>

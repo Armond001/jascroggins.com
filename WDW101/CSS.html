@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title></title>
+            <meta charset="UTF-8" >
+            <meta content="" value="">
+            
+            <!-- this is an embedded stylesheet and applies styles to this page 
+                <style>...</style>  
+            -->
+            <style>
+            /* 
+            CSS rule
+            selector {CSS property:value; ...} ie... p{font-size: 1.2em;}
+            id selector # looks for id="?"
+
+            element selector body apply to nall of bodys content 
+
+            class selector .? look for class
+
+            decendent selector element element   looks for element within element
+              header h1
+              
+              group selector h1,h2 applys to both elements 
+            */
+            main{ background-color: darkgrey;padding: 30px; }
+
+            .blueline{color: mediumblue;}
+            
+           
+           footer h4{margin-top: 0px;}
+            </style>
+            <link rel="stylesheet" href="style.css">
+            
+    </head>
+
+         <body> 
+             <div id="container">
+                    <header>
+                        <h1 class="blueline">WDV101</h1>
+                        <h2>UNIT-2 Styling your pages</h1>
+
+                    </header>
+
+                    <nav>navigation bar</nav>
+
+                    <main>
+                        <h2 >Css style example page</h2>
+
+                        <ul>
+                        <li>specificity: how to resolve style conflict</li>
+                        <li style=background:darkslategray; >precedence: closest rule wins </li>
+                        <li>inheritrance: apply a CSS rule</li>
+                        </ul>
+
+                    </main>
+
+                    <footer>
+                        <h4>copywrite statment</h4>
+                    </footer>
+
+                <!-- this is an inline stylesheet and over rides embedded and external
+                    stylesheet and applies it to a single element 
+                <p style="color:blue">...</p>
+                -->
+                
+
+             </div>
+
+         </body>
+
+
+
+
+
+
+</html>
